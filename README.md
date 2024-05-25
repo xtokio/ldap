@@ -1,7 +1,5 @@
 # LDAP Support for Crystal Lang
 
-[![CI](https://github.com/spider-gazelle/crystal-ldap/actions/workflows/ci.yml/badge.svg)](https://github.com/spider-gazelle/crystal-ldap/actions/workflows/ci.yml)
-
 ## Installation
 
 Add the dependency to your `shard.yml`:
@@ -9,7 +7,7 @@ Add the dependency to your `shard.yml`:
    ```yaml
    dependencies:
      ldap:
-       github: spider-gazelle/crystal-ldap
+       github: xtokio/crystal-ldap
    ```
 
 ## Usage
