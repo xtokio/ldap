@@ -7,7 +7,7 @@ Add the dependency to your `shard.yml`:
    ```yaml
    dependencies:
      ldap:
-       github: xtokio/crystal-ldap
+       github: xtokio/ldap
    ```
 
 ## Usage
