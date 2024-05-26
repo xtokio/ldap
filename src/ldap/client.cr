@@ -107,7 +107,7 @@ class LDAP::Client
   rescue IO::Error
     @mutex.synchronize { close }
   rescue e
-    Log.error(exception: e) { e.message }
+    puts Error.new("#{e.message}")
     @mutex.synchronize do
       @requests.values.each(&.reject(e))
       @requests.clear
