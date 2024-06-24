@@ -55,7 +55,7 @@ class LDAP::Client
     if result.tag.bind_result?
       details = result.parse_bind_response
       result_code = details[:result_code]
-      raise AuthError.new("bind failed with #{result_code}: #{details[:error_message]}") unless result_code.success?
+      raise AuthError.new("#{result_code}: #{details[:error_message]}") unless result_code.success?
     else
       raise Error.new("unexpected response: #{result.tag}")
     end
